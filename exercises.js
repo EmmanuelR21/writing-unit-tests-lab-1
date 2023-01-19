@@ -1,11 +1,13 @@
 // Question 1
-const isUpperCase = () => {
-
+const isUpperCase = (string) => {
+    for(const char of string) {
+        if(char !== char.toUpperCase()) return false
+    }
+    return true
 };
 
 // Question 2
-const removeVowels = () => {
-
+const removeVowels = (arrOfStrings) => {
 };
 
 // Question 3
