@@ -19,16 +19,16 @@ test("Question 1: isUpperCase", () => {
 });
 
 test("Question 2: removeVowels", () => {
-	expect(removeVowels(["abcdefghijklmnopqrstuvwxyz"])).toBe([
+	expect(removeVowels(["abcdefghijklmnopqrstuvwxyz"])).toStrictEqual([
 		"bcdfghjklmnpqrstvwxyz",
 	]); // ["bcdfghjklmnpqrstvwxyz"]
-	expect(removeVowels(["green", "YELLOW", "black", "white"])).toBe([
+	expect(removeVowels(["green", "YELLOW", "black", "white"])).toStrictEqual([
 		"grn",
 		"YLLW",
 		"blck",
 		"wht",
 	]); // ["grn", "YLLW", "blck", "wht"]
-	expect(removeVowels(["ABC", "AEIOU", "XYZ"])).toBe(["BC", "", "XYZ"]); // ["BC", "", "XYZ"]
+	expect(removeVowels(["ABC", "AEIOU", "XYZ"])).toStrictEqual(["BC", "", "XYZ"]); // ["BC", "", "XYZ"]
 });
 
 test("Question 3: wordCap", () => {
@@ -51,14 +51,14 @@ test("Question 5: staggeredCase", () => {
 });
 
 test("Question 6: wordLengths", () => {
-	expect(wordLengths("cow sheep chicken")).toBe([
+	expect(wordLengths("cow sheep chicken")).toStrictEqual([
 		"cow 3",
 		"sheep 5",
 		"chicken 7",
 	]);
 	// ["cow 3", "sheep 5", "chicken 7"]
 
-	expect(wordLengths("baseball hot dogs and apple pie")).toBe([
+	expect(wordLengths("baseball hot dogs and apple pie")).toStrictEqual([
 		"baseball 8",
 		"hot 3",
 		"dogs 4",
@@ -68,7 +68,7 @@ test("Question 6: wordLengths", () => {
 	]);
 	// ["baseball 8", "hot 3", "dogs 4", "and 3", "apple 5", "pie 3"]
 
-	expect(wordLengths("It ain't easy, is it?")).toBe([
+	expect(wordLengths("It ain't easy, is it?")).toStrictEqual([
 		"It 2",
 		"ain't 5",
 		"easy, 5",
@@ -77,13 +77,13 @@ test("Question 6: wordLengths", () => {
 	]);
 	// ["It 2", "ain't 5", "easy, 5", "is 2", "it? 3"]
 
-	expect(wordLengths("Supercalifragilisticexpialidocious")).toBe([
+	expect(wordLengths("Supercalifragilisticexpialidocious")).toStrictEqual([
 		"Supercalifragilisticexpialidocious 34",
 	]);
 	// ["Supercalifragilisticexpialidocious 34"]
 
-	expect(wordLengths("")).toBe([]); // []
-	expect(wordLengths()).toBe([]); // []
+	expect(wordLengths("")).toStrictEqual([]); // []
+	expect(wordLengths()).toStrictEqual([]); // []
 });
 
 test("Question 7: searchWord", () => {
