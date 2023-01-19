@@ -1,4 +1,12 @@
-const exercises = require("./exercises");
+const {
+	isUpperCase,
+	removeVowels,
+	wordCap,
+	swapCase,
+	staggeredCase,
+	wordLengths,
+	searchWord,
+} = require("./exercises");
 
 //write tests in this file
 test("Question 1: isUpperCase", () => {
